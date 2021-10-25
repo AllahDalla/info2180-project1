@@ -1,11 +1,254 @@
 /* Add your CSS to this file */
 body {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 16px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  /* border: 3px solid orange; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+header {
+  /* border: 5px solid red; */
+  background-color: white;
+  font-size: 18px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+nav {
+  margin-top: 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid green; */
+  list-style: none;
+  font-size: 18px;
+}
+
+nav li {
+  /* border: 1px solid orange; */
+  margin: auto 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #5a67d8;
+}
+
+.overview-hero-image {
+  background-color: #e2e8f0;
+}
+
+.overview-hero-text {
+  background-color: #e2e8f0;
+}
+.overview-hero-image img {
+  width: 90px;
+  height: 90px;
+  margin: 20px 20px;
+  margin-left: 160px;
+}
+
+.learn-about .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 75%;
+  /* border: 2px solid green; */
+}
+
+.learn-about .cards {
+  /* border: 2px solid blue; */
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 10px 20px;
+  grid-template-columns: 33% 33% 33%;
+  align-content: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #48bb78;
+}
+
+.card {
+  justify-content: space-evenly;
+  margin: 10px 10px;
+  border: 3px solid #e2e8f0;
+  border-radius: 5px;
+  box-shadow: 5px 5px #888888;
+}
+
+.card img {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card-body {
+  padding: 5px 10px;
+}
+
+.card-body h3 {
+  font-size: 21px;
+  color: #48bb78;
+}
+
+.learn-about h2 {
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+.testing .container {
+  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: #4a5568;
+  color: white;
+}
+
+.cta {
+  /* border: 2px solid green; */
+  grid-column-start: 4;
+  grid-column-end: -1;
+  margin-top: 50px;
+}
+
+.testing-desciption {
+  /* border: 2px solid red; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.testing-desciption p {
+  max-width: 85%;
+  margin-left: 35px;
+}
+
+.testing-desciption h2 {
+  margin-left: 35px;
+  color: white;
+}
+
+.cta a {
+  /* border: 2px solid green; */
+  margin-left: 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: #48bb78;
+  border-radius: 5px;
+  color: white;
+}
+
+.stories .container {
+  display: grid;
+  grid-template-rows: 10% 45% 45%;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* grid-area: "header header header header" "picture words words"
+    "picture words words"; */
+  gap: 0.5px;
+}
+
+.stories h2 {
+  /* grid-area: header; */
+  color: #5a67d8;
+  margin: 10px 100px;
+}
+
+.stories a {
+  color: #5a67d8;
+}
+
+article img {
+  width: 140px;
+  height: 140px;
+  float: left;
+  margin-top: 50px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+  /* grid-area: picture; */
+}
+
+.stories article {
+  /* border: 3px solid green; */
+  margin: 10px 100px;
+}
+
+.article-body {
+  /* grid-area: words; */
+  margin-left: 10px;
+  padding: 3px 5px;
+}
+
+.article-body h3 {
+  width: 85%;
+  font-size: 18px;
+}
+
+.newsletter .container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 30% 45% 25%;
+  background-color: #48bb78;
+  color: white;
+}
+
+.newsletter .container h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* border: 2px solid red; */
+  /* margin: 1px auto; */
+  padding: 0px 2px;
+}
+
+.newsletter .container p {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* border: 2px solid red; */
+  /* margin: 1px auto; */
+}
+
+.newsletter .container form {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* border: 2px solid red; */
+  /* margin: 1px auto; */
+  /* align-self: center; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.btn {
+  height: min-content;
+  width: 90px;
+  margin-right: 20px;
+  background-color: #5a67d8;
+}
+
+footer .container {
+  background-color: #4a5568;
+  color: white;
 }
